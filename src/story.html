@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品牌故事</title>
+    <meta name="keywords" content="品牌故事">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- nav -->
+    ${require('html-loader!./common/nav.html')}
+
+    <div class="top-page story">
+        <img src="./images/story_t.jpg" alt="">
+        <h1 class="hidden-xs"><a href="./index.html" title="OLOMI品牌网站"><img src="<%=require('./images/logo.png')%>" alt=""></a></h1>
+    </div>
+    
+    <div class="main story">
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="col-md-4 col-md-offset-3 col-sm-4 col-xs-12">
+                    <p>我们自产自销</p>
+                    <p>依靠品质聚集</p>
+                    <p>健康个性灵巧</p>
+                    <p>一眼生机皎皎</p>
+                    <i class="icon iconfont icon-jiantou1"></i>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <h3>Hello,感谢您对我的认知</h3>
+                    <h3>我们-OLOMI 诞生于1998年9月20日，<br/>美国加州是我们的诞生基地。</h3>
+                    <h3>我们在以非一般的速度成长!</h3>
+                    <h3>如果您对我们很感兴趣，还请您留下对我爱的印记！</h3>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <img src="<%=require('./images/story_1.jpg')%>" alt="" class="shadow-none" data-scroll-reveal="enter right and move 50px over 0.5s">
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="<%=require('./images/story_2.jpg')%>" alt="" data-scroll-reveal="enter left and move 50px over 0.5s">
+                    <p>我们的<span>目标市场</span>是<br/><br/>中国和美国</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p>我们的<span>文化标签</span>是<br/><br/>让每个人享受更高品质的生活</p>
+                    <p>我们的<span>目标群体</span>是<br/><br/>那些热爱生活，乐观向上，追求更高生活品质，全新的消费理念，充分展现<br/>个性与自信的新一代消费人群</p>
+                    <img src="<%=require('./images/story_3.jpg')%>" alt="" data-scroll-reveal="enter bottom and move 50px over 0.5s">
+                </div>
+            </div>
+            <a href="life.html" class="a-more">查看更多--愿景使命</a>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    ${require('html-loader!./common/footer.html')}
+   
+</body>
+</html>

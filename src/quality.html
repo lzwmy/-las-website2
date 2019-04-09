@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品质控制</title>
+    <meta name="keywords" content="品质控制">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- nav -->
+    ${require('html-loader!./common/nav.html')}
+
+    <div class="top-page quality">
+        <img src="./images/quality_t.jpg" alt="">
+        <h1 class="home-link"><a href="./index.html" title="首页"></a></h1>
+    </div>
+
+    
+    <div class="main quality">
+        <div class="container-fluid">
+            <div class="row row1 flex-center">
+                <p>品质控制即使用的适宜性</p>
+            </div>
+            <div class="row row2">
+                <img src="<%=require('./images/quality_1.jpg')%>" alt=""  data-scroll-reveal="enter right and move 50px over 0.5s">
+            </div>
+            <div class="row row3">
+                <h3>进料（货）检验</h3>
+                <p>依据购买标准，从原材料的外观、尺寸和特性进行全<br/>
+                    检或者抽检，等待检查结果，是否接收、拒收、让步<br/>
+                    接收、全检（挑出不合格品退货）或者返工后重检。
+                </p>
+            </div>
+            <div class="row row3">
+                <h3>生产过程检验</h3>
+                <p>依据检验标准，采用首件自检、互检、专检相结合；<br/>
+                    过程控制与抽检、巡检相结合；多道工序集中检验；<br/>
+                    逐道工序进行检验；产品完成后检验；抽样与全检相结合等方式进行检验。
+                </p>
+            </div>
+            <div class="row row3">
+                <h3>成品出货检验</h3>
+                <p>对品质异常的反馈进行处理，并进行质量记录，及时<br/>
+                    整理和归档、并贮存在适宜的环境中。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    ${require('html-loader!./common/footer.html')}
+   
+</body>
+</html>

@@ -1,0 +1,208 @@
+#top {
+    width: 100%;
+    height: 100px;
+    background: #f9f9f9;
+    position: relative;
+}
+#top .home-link{
+    width:15vw;
+    height: 6vw;
+    margin:0;
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%,0);
+    background: url('../images/pro_top.png') no-repeat center bottom;
+    background-size: 100%;
+    z-index: 21;
+}
+#top .home-link a{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/logo.png') no-repeat center bottom;
+    background-size: 40%;
+}
+.nav-com.fixed + #top .home-link{
+    position: fixed;
+    top:100px;
+    z-index: 11;
+    background: url('../images/pro_bot.png') no-repeat center top;
+    background-size: 100%;
+}
+.nav-com.fixed + #top .home-link a{
+    top:-24px;
+    background: url('../images/logo.png') no-repeat center top;
+    background-size: 40%;
+}
+
+#main{
+   background: #e4dbd4;
+   padding:100px 0;
+   min-height: 100%;
+}
+#main .row{
+    margin:0;
+}
+#main .left-nav{
+    float: left;
+    width: 10%;
+    height: 465px;
+    box-shadow: 2px 0px 8px 0px rgba(162, 108, 54, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .left-nav p{
+    font-size:18px;
+    color:#666;
+    width:15px;
+    text-align: center;
+}
+#main .swiper-container{
+    margin-left:11%;
+    margin-bottom:3vw;
+}
+
+#main .pro{
+    position:relative;
+    width:100%;
+    overflow: hidden;
+}
+#main .pro a img{
+    display: block;
+    margin:0 auto;
+    border-radius:6px;
+    box-shadow: 0 1px 5px #989898;
+}
+#main .pro .bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 20%;
+    background: url('../images/bot.png') no-repeat center bottom;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 20;
+}
+#main .pro .bottom p{
+    margin-bottom: 3px;
+    color:#444;
+    font-size:0.9vw;
+}
+#main .pro .bottom p .line{
+    margin:0 50px;
+    font-size:0.8vw;
+}
+#main .pro:hover .box{
+    opacity: 1;
+    animation:up 0.3s;
+}
+@keyframes up {
+    0%{
+        transform: translate(0,100%)
+    }
+    100%{
+        transform: translate(0,0)
+    }
+}
+#main .pro .box{
+    opacity: 0;
+    padding-top:50px;
+    padding-bottom:20%;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5); 
+    z-index: 10;
+    color:#fff;
+    text-align: center;
+}
+#main .pro .box img{
+   width: 10vw;
+   height: 10vw;
+   margin:1vw;
+}
+#main .swiper-button-next,
+#main .swiper-button-prev{
+    z-index: 99;
+}
+
+#main .swiper-button-prev,
+#main .swiper-button-next{
+    width:3vw;
+    height: 5vw;
+}
+#main .swiper-button-prev{
+    transform: rotate(-180deg);
+    transform-origin: 50% 50%;
+    background:url('../images/next.png') center no-repeat;
+    left: 10px;
+    right: auto;
+}
+#main .swiper-button-next{
+    background:url('../images/next.png') center no-repeat;
+    right: 10px;
+    left: auto;
+}
+#main .swiper-container:hover .swiper-button-prev,
+#main .swiper-container:hover .swiper-button-next{
+    background:rgba(0, 0, 0, 0.5) url('../images/next.png') center no-repeat;
+}
+
+
+@media screen and ( max-width: 768px ) {
+    #main{
+        padding:30px 8px;
+    }
+   
+    #main .swiper-container{
+        margin-left:40px;
+    }
+    #main .pro .bottom p{
+        margin-bottom: 5px;
+    }
+    #main .pro .box{
+        padding-top: 20px;
+        padding-bottom:70px;
+    }
+    #main .pro .box img{
+        width: 110px;
+        height: 110px;
+        margin-bottom:10px;
+    }
+    #main .swiper-button-prev,
+    #main .swiper-button-next{
+        width:6vw;
+        height: 10vw;
+    }
+}
+
+
+@media screen  and ( max-width: 1068px ) and (min-width: 765px) {
+    .nav-com{
+        height: 80px;
+    }
+    #top{
+        height: 80px;
+    }
+    .nav-com.fixed + #top .home-link{
+        top:80px;
+    }
+    .nav-com .left ol {
+        padding: 30px 0 0 15px;
+    }
+    #main .row > div {
+        padding:0 15px;
+    }
+}
+    

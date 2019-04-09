@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科学配方</title>
+    <meta name="keywords" content="科学配方">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- nav -->
+    ${require('html-loader!./common/nav.html')}
+
+    <div class="top-page formula">
+        <img src="./images/formula_t.jpg" alt="">
+        <h1 class="home-link"><a href="./index.html" title="首页"></a></h1>
+    </div>
+
+    
+    <div class="main formula">
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img id="imgH" src="<%=require('./images/formula_1.jpg')%>" alt="" width="100%" class="shadow-none">
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t">
+                    <h3>复合性</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t t1">
+                    <p>复合性神经酸由天然大豆榨油剩余物提取。是细胞膜的活性物质，尤其存在于大脑细胞中。其功能主要是改善神经细胞功能，调节神经脉冲的传导，增进大脑记忆功能，由于其具有很强的亲脂性，吸收后能够迅速通过血脑屏障进入大脑，起到舒缓血管平滑肌细胞，增加脑部供血的作用。</p>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-md-4 col-sm-4 col-xs-12 t">
+                    <h3>功效性</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t t1">
+                    <p>功效性化妆品指专门针对问题性皮肤人而设计的，具有特殊用途的化妆品，一般对皮肤有特别的护理作用，如美白、抗皱、抗衰老、紧致肌肤之类的特效。如按功能可分为三种：基本型、半功效型、功效型。其成分是经过长期证实无毒副作用的植物提取成分或人体内的小分子蛋白。未添加有任何化学成分，长期使用安全可靠，无毒副作用、无依赖性、其中EGF更直接参与皮肤的代谢，促进细胞分裂、增殖、从而能从本质上解决由衰老引起的皮肤问题。</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="<%=require('./images/formula_2.jpg')%>" alt="" width="100%" class="shadow-none">
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="<%=require('./images/formula_3.jpg')%>" alt="" width="100%" class="shadow-none">
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t">
+                    <h3>协同性</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t t1">
+                    <p>协同是指元素对元素的相干能力，表现了元素在整体发展运行过程中协调与合作的性质。结构元素各自之间的协调、协作形成拉动效应，推动事物共同前进，对事物双方或多方而言，协同结果使个个获益，整体加强，共同发展。导致事物间属性互相增强、向积极方向发展的相干性即为协同性。别构抑制剂增强酶对底物的协同性，而激活剂则削弱酶对底物的协同性。 </p>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-md-4 col-sm-4 col-xs-12 t">
+                    <h3>稳定性</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 t t1">
+                    <p>稳定性可以进行定量的表征，主要是确定计量特性随时间变化的关系。当然系统的稳定性只是对系统的一个基本要求，一个令人满意的控制系统必须还要满足许多别的指标，例如过渡时间、超调量、稳态误差、调节时间等。一个好的系统往往是这些方面的综合考虑的结果。</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="<%=require('./images/formula_4.jpg')%>" alt="" width="100%" class="shadow-none">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    ${require('html-loader!./common/footer.html')}
+   
+</body>
+<script>
+        window.onload = function(){
+            var imgH = document.getElementById("imgH");
+            var odiv = document.getElementsByClassName("t");
+            var rowH = imgH.offsetHeight;
+            for(var i = 0; i < odiv.length; i++){
+                odiv[i].style.height = rowH +"px";
+            }
+            window.onresize = function(){
+                rowH = imgH.offsetHeight;
+                for(var i = 0; i < odiv.length; i++){
+                    odiv[i].style.height = rowH +"px";
+                }
+            }
+        }
+        
+</script>
+
+</html>

@@ -146,12 +146,13 @@ footer .right p{
     color:#5f5f5f;
 }
 footer .copy-right span{
-    margin-right:20px;
+    margin-left:20px;
 }
 #top_back{
     position: fixed;
     bottom:80px;
     right:60px;
+    z-index: 99;
     width:40px;
     height: 40px;
     background: #fff;
